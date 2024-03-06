@@ -128,4 +128,9 @@ public class MemberController {
     return checkResult;
   }
   
+  @GetMapping("/logout")
+  public String logout(){
+    return "logout";
+  } 
+  
 }
