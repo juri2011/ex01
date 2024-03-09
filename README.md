@@ -20,7 +20,7 @@ Spring Framework 기반으로 국비지원 수업 때 진행된 회원관리 CRU
 |---|---|---|
 |`loginForm()`|login.jsp 화면으로 이동|
 |`login()`|사용자가 입력한 정보가 DB에 있으면<br> session에 로그인 정보 저장, main 화면으로 이동 |select (selectOne)|
-### 게시글 전체 리스트
+### 회원 전체 리스트
 |주요기능(함수)|설명|SQL
 |---|---|---|
 |`findAll()`|사용자로부터 입력을 받아 회원을 등록|select(selectList)|
@@ -32,20 +32,20 @@ Spring Framework 기반으로 국비지원 수업 때 진행된 회원관리 CRU
 ### 삭제
 |주요기능(함수)|설명|SQL
 |---|---|---|
-|`delete()`|상세페이지로부터 id값을 받아서 해당 게시물 삭제|delete|
+|`delete()`|상세페이지로부터 id값을 받아서 회원 삭제|delete|
 ### 수정
 |주요기능(함수)|설명|SQL
 |---|---|---|
 |`updateForm()`|update.jsp로 이|
-|`update()`|사용자로부터 입력한 값을 받아서 게시글 수정|update|
+|`update()`|사용자로부터 입력한 값을 받아서 회원 정보 수정|update|
 |`onclick=update()`|비밀번호 확인 : 맞는 경우만 수정|update|
 ## :open_file_folder: 구조
 ### 클래스
 * HomeController
-* ModelController
-* ModelDTO
-* ModelService
-* ModelRepository
+* MemberController
+* MemberDTO
+* MemberService
+* MemberRepository
 ### views
 * index.jsp
 * save.jsp
